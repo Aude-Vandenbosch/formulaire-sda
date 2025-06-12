@@ -1,0 +1,91 @@
+/* Base mobile-first */
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  header {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .logo-sda {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .titre-formulaire {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .phrase-accroche {
+    font-size: 16px;
+    color: #444;
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    border: 1px solid #C0C0C0;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+  }
+  
+  form label {
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  
+  form input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  form button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+  }
+  
+  form button:hover {
+    background-color: #444;
+  }
+  
+  /* Desktop & grands écrans */
+  @media (min-width: 601px) {
+    form {
+      padding: 40px 30px;
+      margin: 40px auto 0;
+      width: auto;
+    }
+  
+    form input,
+    form button {
+      width: 250px;
+    }
+  }
